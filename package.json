@@ -1,0 +1,27 @@
+{
+  "name": "projetointegradorgrupo6dh",
+  "version": "1.0.0",
+  "description": "Este repositório visa armazenar todos os artefatos ligados ao nosso projeto integrador na qual iremos desenvolver em parceria até o final do curso",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcelojlrodrigues/ProjetoIntegradorGrupo6DH.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcelojlrodrigues/ProjetoIntegradorGrupo6DH/issues"
+  },
+  "homepage": "https://github.com/marcelojlrodrigues/ProjetoIntegradorGrupo6DH#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
