@@ -1,0 +1,68 @@
+/* Dependências */
+
+:root{
+    --bg_primary__main: #004AAD;
+}
+
+
+/* Aqui vão imports e configurações de variáveis roots */
+
+/* Cores */
+header {
+    background-color: var(--bg_primary__main);
+}
+
+/* Layout - Responsividade */
+
+ul {
+    display: none;
+}
+
+.header {
+    display: flex;
+}
+
+/* Espaçamentos - padding margin */
+
+header input {
+    padding: 6px 6px 6px 20px;
+    margin-top: 10px;
+}
+
+header {
+    padding: 12px;
+}
+
+/* Tipografia */
+
+
+
+/* Estilos */
+
+header{
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.header{
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    height: 30px;
+}
+
+header input {
+    border-radius: 16px;
+    font-size: 15px;
+    width: 200px;
+    height: 35px;
+   
+}
+
+/* Responsividade - Version Desktop */

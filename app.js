@@ -1,7 +1,6 @@
 const express = require('express');
 const indexRoute = require('./routes/indexRoute');
 
-
 const app = express();
 
 app.use(express.urlencoded({extended: true}));

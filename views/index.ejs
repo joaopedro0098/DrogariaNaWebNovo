@@ -1,1 +1,40 @@
-<h1>Olá, mundo</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drogaria Na Web</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/header.css">
+</head>
+<body>
+    <%- include('header.ejs') %> 
+ 
+    <h1>Olá, mundo</h1>
+    <main>
+        <section class="categorias">
+            <article>
+                <% categorias.forEach(categoria => { %>
+                    <img class="imgMain" src="<%= categoria.imagem %>" alt="">
+                    <h1><%= categoria.nomeCategoria %></h1>
+                <% }) %>
+            </article>
+        </section>
+
+        <section class="promocoes">
+            <article>
+
+            </article>
+        </section>
+
+        <section class="maisVendidos">
+            <article>
+
+            </article>
+        </section>
+    </main>
+    
+    
+</body>
+</html>
