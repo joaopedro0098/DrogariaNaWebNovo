@@ -1,3 +1,35 @@
 [
+    {
+        "imagem": "aspirina.png",
+        "nomeRemedio": "Forte Viron",
+        "preco": "R$ 999,00"
+    },
     
+    {
+        "imagem": "aspirina.png",
+        "nomeRemedio": "Aspirina",
+        "preco": "R$ 14,98"
+    },
+    
+    {
+        "imagem": "aspirina.png",
+        "nomeRemedio": "Minoxidil",
+        "preco": "R$ 28,00"
+    },
+    
+    {
+        "imagem": "aspirina.png",
+        "nomeRemedio": "Aspirina",
+        "preco": "R$ 28,00"
+    },
+    {
+        "imagem": "aspirina.png",
+        "nomeRemedio": "Aspirina",
+        "preco": "R$ 28,00"
+    },
+    {
+        "imagem": "aspirina.png",
+        "nomeRemedio": "Aspirina",
+        "preco": "R$ 28,00"
+    }
 ]

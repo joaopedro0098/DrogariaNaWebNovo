@@ -1,40 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drogaria Na Web</title>
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/header.css">
-</head>
-<body>
-    <%- include('header.ejs') %> 
- 
-    <h1>Olá, mundo</h1>
+<%- include('partials/header.ejs') %> 
+
     <main>
         <section class="categorias">
-            <article>
-                <% categorias.forEach(categoria => { %>
-                    <img class="imgMain" src="<%= categoria.imagem %>" alt="">
-                    <h1><%= categoria.nomeCategoria %></h1>
-                <% }) %>
-            </article>
+            <h1>Categorias</h1>
+                <div>
+                    <% categorias.forEach(categoria => { %>
+                        <article>
+                        <img class="imgMain" src="/imgs/categorias/<%= categoria.imagem %>" alt="">
+                        <h2><%= categoria.nomeCategoria %></h2>
+                        </article>
+                    <% }) %>
+                </div>
         </section>
 
         <section class="promocoes">
-            <article>
-
-            </article>
+            
+            <h1>Promoções</h1>
+                <div>
+                <% promocao.forEach( promocao  => { %>
+                    <article>
+                    <h1><%= promocao.categoria %></h1>
+                    <img class="imgMain" src="/imgs/promocao/<%= promocao.imagem %>" alt="">
+                    <img class="imgMain" src="/imgs/promocao/<%= promocao.cupom %>" alt="">
+                    </article>
+                <% }) %>
+                </div>
         </section>
 
         <section class="maisVendidos">
-            <article>
+            
+                <h1>Mais Vendidos</h1>
+                <div>
+                <% maisvendidos.forEach( maisvendidos  => { %>
+                    <article>
+                        <img class="imgMain" src="/imgs/maisvendidos/<%= maisvendidos.imagem %>" alt="">
+                        <h1><%= maisvendidos.nomeRemedio %></h1>
+                        <h2><%= maisvendidos.preco %> </h2>
+                    </article>
+                <% }) %>
+                </div>
+        </section>
 
-            </article>
+        <section class="destaques">
+            <h1>Destaques</h1>
+            <div class="divDestaques">
+                <div>
+                    <img class="" src="/imgs/desodorante.png">
+                    <h3>Desodorante</h3>
+                </div>
+                <div>
+                    <img class="" src="/imgs/vitaminas.png">
+                    <h3>Vitaminas</h3>
+
+                    <img class="" src="/imgs/ninho.png">
+                    <h3>Ninho</h3>
+                </div>
+
+                <img class="" src="/imgs/forteviron.png">
+            </div>
+        </section>
+
+        <section class="nossasMarcas">
+            <h2>Nossas Marcas</h2>
+            <figure>
+                <img src="/imgs/medley.png" alt="Medley">
+                <img src="/imgs/nestle.png" alt="Nestle">
+                <img src="/imgs/libbs.png" alt="Libbs">
+                <img src="/imgs/ache.png" alt="Ache">
+                <img src="/imgs/pampers.png" alt="Ache">
+                <img src="/imgs/laroche.png" alt="La Roche">
+            </figure>
+        </section>
+
+        <section>
+            <figure>
+            <img src="/imgs/revolucaodascores.png" alt="">
+            <img src="/imgs/promocao50off.png" alt="">
+            </figure>
         </section>
     </main>
-    
+
+    <%- include('partials/footer.ejs') %> 
+
     
 </body>
 </html>

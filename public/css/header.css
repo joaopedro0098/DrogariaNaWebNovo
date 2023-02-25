@@ -30,9 +30,12 @@ header input {
 }
 
 header {
-    padding: 12px;
+    padding: 14px 22px 14px 22px;
 }
 
+header .logo {
+    margin-top: -5px;
+}
 /* Tipografia */
 
 
@@ -48,21 +51,24 @@ header{
     justify-content: space-between;
 }
 
+header img {
+    height: 30px;
+}
+
+header .logo {
+    height: 4em;
+}
+
 .search {
     display: flex;
     justify-content: center;
 }
 
-img {
-    height: 30px;
-}
-
 header input {
     border-radius: 16px;
     font-size: 15px;
-    width: 200px;
+    width: 3000px;
     height: 35px;
-   
 }
 
 /* Responsividade - Version Desktop */
