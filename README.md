@@ -1,9 +1,3 @@
-# ProjetoIntegrador
-
-Drogaria na Web
-
-Este repositório visa armazenar todos os artefatos ligados ao nosso projeto integrador na qual iremos desenvolver em parceria até o final do curso
-
 ![bannerProductCard]
 
 <h1 align='center'> Projeto integrador - Digital House </h1>

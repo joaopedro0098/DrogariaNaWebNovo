@@ -14,7 +14,7 @@ header {
 
 /* Layout - Responsividade */
 
-ul {
+.menu-filters {
     display: none;
 }
 
