@@ -1,4 +1,7 @@
 
+.componentes-prateleira {
+    display: flex;
+}
 .test {
     display: none;
 }

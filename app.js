@@ -1,7 +1,8 @@
 const express = require('express');
 const indexRoute = require('./routes/indexRoute');
 const contatoRoute = require('./routes/contatoRoute');
-const medicamentos = require('./routes/medicamentos');
+const medicamentosRoute = require('./routes/medicamentosRoute');
+const loginPageRoute = require('./routes/loginPageRoute')
 
 const app = express();
 
@@ -13,7 +14,8 @@ app.set('views', 'views');
 
 app.use('/', indexRoute);
 app.use('/contato', contatoRoute);
-app.use('/medicamentos', medicamentos);
+app.use('/medicamentos', medicamentosRoute);
+app.use('/login', loginPageRoute);
 
 app.listen(80, () => console.log("Servidor funcionando na porta 80"));
 

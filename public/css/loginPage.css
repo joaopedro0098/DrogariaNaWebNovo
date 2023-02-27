@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+:root {
+    --color__primary: #004AAD;
+    --color__segundary: #fff;
+       
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins' , sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1.5rem;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-color: var(--color__primary);
+    width: 60%;
+    height: 100vh;
+    clip-path: polygon(0 100%, 0 0, 100% 0, 70% 100%);
+    z-index: -1;
+    
+    
+}
+
+
+
+.login-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 10px 50px -30px black;
+    width: 1200px;
+    border-radius: 30px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto auto;
+
+    
+}
+
+.login-card img {
+    margin-bottom: 15px;
+    width: 250px;
+    height: 100px;
+    border-radius: 40px;
+    cursor: pointer;
+    
+}
+
+.login-card > a {
+    color: var(--color__primary);
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn > a {
+   text-decoration: none;
+   color: var(--color__primary);
+   position: relative;
+   right: 60px;
+    
+}
+
+.btn-right {
+    text-decoration: none;
+    color: var(--color__primary);
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.column {
+    padding: 5rem;
+        
+}
+
+.column:last-child {
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.column:last-child > a {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    border: 2px solid var(--color__primary);
+    color: black;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .3s;
+    font-weight: 600;
+    
+    
+}
+.column:last-child:houver {
+    text-align: center;
+}
+
+.column:last-child > p {
+    text-align: center;
+}
+
+button {
+    background-color: var(--color__primary);
+    border: none;
+    color: white;
+    padding: 20px 50px;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all .2s;
+}
+
+.form-element {
+    width: 100%;
+    border: none;
+    background-color: #f1f1f1;
+    padding: 20px 30px;
+    font-size: 18px;
+    border-radius: 50px;
+    
+    outline: none;
+}
+
+:focus {
+    box-shadow: 0 0 0 2px var(--color__primary);
+}
+
+input[type=checkbox] {
+    accent-color: var(--color__primary);
+    width: 16px;
+    height: 16px;
+}
+
+form {
+    margin-top: 3rem;
+}
+form >* {
+    margin-top: 1rem;
+}
+
+.form-item {
+    margin-top: 1rem;
+}
+
+.form-checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    margin-left: 5px;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.social-buttons > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 22px;
+    color: white;
+    transition: .2s;
+}
+
+.social-buttons > .google {
+    background-color: #db4a39;
+}
+
+.social-buttons > .facebook {
+    background-color: #3b5998;
+}
+
+.social-buttons > .google:hover{
+    scale: .95;
+}
+
+.social-buttons > .facebook:hover {
+    scale: .95;
+}
+
+
+
+
+@media (max-width:992px) {
+    .login-card {
+        display: block;
+        width: 500px;
+        text-align: center;
+    }
+    
+    .column:last-child {
+        display: none;
+    }
+
+    .btn {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .btn > a {
+        position: relative;
+        left: 3px;
+        
+    }
+
+    .social-buttons {
+        justify-content: center;
+    }
+}
