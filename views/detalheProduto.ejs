@@ -1,0 +1,19 @@
+<%- include('header.ejs') %> 
+    
+<body>
+  <main>
+    <div class="container_produto"> 
+      <h1><%= prod.nomeProduto %></h1>        
+      <img src="/imgs/produtos/<%= prod.imgProduto %>" alt="img">
+      <h2><%= prod.preco %></h2>
+      <p>
+        <%= prod.descricao %>
+      </p>      
+    </div>
+    <input class="adicionar" type="button">Adicionar ao carrinho</input>
+    <br>
+    <input class="comprar" type="button">Comprar</input>
+   
+  </main>
+</body>
+

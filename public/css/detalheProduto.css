@@ -1,0 +1,47 @@
+*{
+    padding:0;
+    margin:0; 
+}
+
+:root{
+    --color1:#2909E3;
+    --color2:#164CFA;
+    --color3:#098EE3;
+    --color4:#B1FEFF;
+    --color5:#8B0AFB;
+    --color6:rgb(6, 226, 6);
+}
+
+.container_produto{
+    display:inline-block; 
+    flex-direction:row; 
+}
+
+h1{
+    text-align:center; 
+    color:var(--color1);
+    font-family: sans-serif;
+    padding:0px; 
+}
+img{
+    text-align:center; 
+    
+}
+h2{
+    text-align:center; 
+    margin-top:8em; 
+}
+p{
+    margin-top:2em; 
+    margin:0em 1em 0em 1em; 
+}
+
+.adicionar{
+  padding:1em; 
+  background-color:var(--color2);
+}
+.comprar{
+    padding:1em; 
+    background-color:var(--color6);
+}
+
