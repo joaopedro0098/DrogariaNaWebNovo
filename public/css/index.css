@@ -1,12 +1,17 @@
 /* Toda a formatação do index irá nesse arquivo */
 /* Dependencias */
 
+/* VARIÁVEIS GLOBAIS */
+
 
 /* CORES */
 
 
 /* LAYOUT RESPONSIVIDADE */
 
+.categorias div, .promocoes div, .maisVendidos div, .destaques .divDestaques {
+    display: flex;
+}
 
 /* ESPAÇAMENTOS - PADDINS E MARGINS */
 
@@ -14,5 +19,21 @@
 /* TIPOGRAFIAS */
 
 /* ESTILOS */
+.categorias div {
+    margin: 15px 5px 5px 15px;
+}
+
+.categorias article {
+    padding: 10px;
+}
+
+.categorias img {
+    width: 7.5em;
+}
+
+.categorias h2 {
+    font-size: 0.9em;
+    text-align: center;
+}
 
 /* RESPONSIVIDADE - VERSÃO DESKTOP */

@@ -1,27 +1,26 @@
 [
     {
         "nomeCategoria": "Anticoncepcional",
-        "imagem": "/imgs/categorias/anticoncepcional.png"
+        "imagem": "anticoncepcional.png"
         },
     {
         "nomeCategoria": "Cuidados Pessoais",
-        "imagem": "/imgs/categorias/cuidadospessoais.png"
+        "imagem": "cuidadospessoais.png"
     },
     {
-        "nomeCategoria": "Diabtes",
-        "imagem": "/imgs/categorias/diabetes.png"
+        "nomeCategoria": "Diabetes",
+        "imagem": "diabetes.png"
     },
     {
         "nomeCategoria": "Disfunção Erétil",
-        "imagem": "/imgs/categorias/disfuncao.png"
+        "imagem": "disfuncao.png"
     },
     {
         "nomeCategoria": "Pressão Alta",
-        "imagem": "/imgs/categorias/pressaoalta.png"
+        "imagem": "pressaoalta.png"
     },
     {
         "nomeCategoria": "Testes e Aparelhos",
-        "imagem": "/imgs/categorias/testeseaparelhos.png"
+        "imagem": "testeseaparelhos.png"
     }
-    
 ]
