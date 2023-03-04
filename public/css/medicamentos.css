@@ -12,3 +12,12 @@
         display: block;
     }
 }
+
+.products {
+    display: flex;
+}
+
+.products li {
+    width: 200px;
+}
+

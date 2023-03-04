@@ -1,22 +1,8 @@
-
  <%- include('partials/header.ejs') %>
-<!--CONTAINER PRATELEIRA E SIDEBAR-->
-<aside class="componentes-prateleira">
-    <main class="container">
-        <div class="container-prateleira">
-            <ul>
-                <li>
-                    <img src="/imgs/img-prod.png" alt="">
-                    <p>Dipirona Sódica 500mg Genérico EMS 10 Comprimidos</p>
-                    <p class="price">R$ 3,19</p>
-                    <button class="menos">-</button>
-                    <button class="mais">+</button>
-                    <button>COMPRAR</button>
-                </li>
-            </ul>
-        </div>
-    </main>
+
  <!--CONTAINER SIDEBAR-->
+
+<aside class="componentes-prateleira">
     <div class="test">
         <div class="container-sidebar">
             <h3 class="order-by">Ordenar Por:</h3>
@@ -57,4 +43,28 @@
             <input type="checkbox" name="solgotas" id="solgotas"> 100ml Solução<br>
         </nav>
     </div>
+
+
+<!--CONTAINER PRATELEIRA E SIDEBAR-->
+
+    <main class="container">
+        <div class="container-prateleira">
+            <ul class="products">
+                <% products.forEach(products => { %>
+                    <a href="/products/productDetail/<%= products.idProduct %>">        
+                        <li>
+                            <img class="imgProduct" src="/imgs/<%= products.imgName %>" alt="">
+                            <p class="nameProduct"><%= products.productName %><p>
+                            <p class="price"><%= products.price %></p>
+                            <button class="lessSignal">-</button>
+                            <button class="plusSignal">+</button>
+                            <button class="callToAction">COMPRAR</button>
+                        </li>
+                    </a>
+                <% }) %>
+                
+            </ul>
+        </div>
+    </main>
+
 </aside>
