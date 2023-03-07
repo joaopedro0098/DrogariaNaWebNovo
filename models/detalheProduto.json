@@ -4,14 +4,15 @@
       "nomeProduto":"Dipirona",
       "imgProduto":"dipirona.jpg",
       "preco":"10,00", 
-      "descricao":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur nam corrupti deleniti reiciendis earum, fugit assumenda maiores laboriosam minima delectus recusandae quo quis esse excepturi quisquam ab vel ad ipsam."
+      "descricao":"Dipirona Monoidrata 500mg Pratti Donaduzzi 20 "
+     
     },
     {
       "idProduto": "2",
       "nomeProduto":"Gardenal",
       "imgProduto":"dipirona.jpg",
       "preco":"20,00", 
-      "descricao":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur nam corrupti deleniti reiciendis earum, fugit assumenda maiores laboriosam minima delectus recusandae quo quis esse excepturi quisquam ab vel ad ipsam."
+      "descricao":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur nam corrupti deleniti reiciendis earum, fugit "
     },
     {
       "idProduto": "3",

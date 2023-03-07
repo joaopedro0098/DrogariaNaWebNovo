@@ -1,12 +1,9 @@
 const express = require('express');
 const indexRoute = require('./routes/indexRoute');
-
-// const detalheProduto = require('./routes/detalheProduto');
-
+const detalheProduto = require('./routes/detalheProduto'); // <=erro 
 const contatoRoute = require('./routes/contatoRoute');
 const medicamentosRoute = require('./routes/medicamentosRoute');
 const loginPageRoute = require('./routes/loginPageRoute')
-
 const app = express();
 
 app.use(express.urlencoded({extended: true}));
@@ -16,9 +13,7 @@ app.set('view engine', 'ejs');
 app.set('views', 'views');
 
 app.use('/', indexRoute);
-
-// app.use('/produto', detalheProduto);
-
+app.use('/produto', detalheProduto); // <= erro 
 app.use('/contato', contatoRoute);
 app.use('/medicamentos', medicamentosRoute);
 app.use('/login', loginPageRoute);

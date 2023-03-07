@@ -1,19 +1,24 @@
-<%- include('header.ejs') %> 
+<%- include('partials/header.ejs') %> 
     
 <body>
   <main>
     <div class="container_produto"> 
-      <h1><%= prod.nomeProduto %></h1>        
-      <img src="/imgs/produtos/<%= prod.imgProduto %>" alt="img">
-      <h2><%= prod.preco %></h2>
+      <h1><%= prod.nomeProduto %></h1>
+      <picture> 
+      <img class="imgProduto" src="/imgs/produtos/<%= prod.imgProduto %>" alt="img">   
       <p>
         <%= prod.descricao %>
-      </p>      
+      </p>
+      <h2> R$<%= prod.preco %></h2>
+       <div class="botoes">
+        <input class="adicionar" type="button" value="Adicionar ao carrinho"/>
+         <br>
+         <input class="comprar" type="button" value="Comprar agora"></input>
+       </div>
     </div>
-    <input class="adicionar" type="button">Adicionar ao carrinho</input>
-    <br>
-    <input class="comprar" type="button">Comprar</input>
-   
+
+    
+     
   </main>
 </body>
 
