@@ -1,0 +1,20 @@
+<%- include('partials/header.ejs') %>
+
+<%- console.log(prod) %>
+
+<main class="container">
+    <div class="container-prateleira">
+        <ul class="product">
+            
+                <li>
+                    <img class="imgProduct" src="/imgs/<%= prod.imgName %>" alt="">
+                    <p class="nameProduct"><%= prod.productName %><p>
+                    <p class="price"><%= prod.price %></p>
+                    <button class="lessSignal">-</button>
+                    <button class="plusSignal">+</button>
+                    <button class="callToAction">COMPRAR</button>
+                </li>
+                    
+        </ul>
+    </div>
+</main>
