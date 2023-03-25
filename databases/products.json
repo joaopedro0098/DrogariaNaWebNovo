@@ -1,0 +1,32 @@
+[
+    {
+        "idProduct": "1",
+        "imgName": "img-prod.png",
+        "productName": "Fort Viron do Marcelo",
+        "price": "3,19"
+    },
+    {
+        "idProduct": "2",
+        "imgName": "img-prod.png",
+        "productName": "Omega 3 do Roberto",
+        "price": "3,19"
+    },
+    {
+        "idProduct": "3",
+        "imgName": "img-prod.png",
+        "productName": "Minoxidil do Daniel",
+        "price": "3,19"
+    },
+    {
+        "idProduct": "4",
+        "imgName": "img-prod.png",
+        "productName": "Vitaminas do Laris",
+        "price": "3,19"
+    },
+    {
+        "idProduct": "5",
+        "imgName": "img-prod.png",
+        "productName": "Shampoo do Joao",
+        "price": "3,19"
+    }
+]

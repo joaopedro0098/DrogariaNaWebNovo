@@ -1,24 +1,31 @@
-<%- include('partials/header.ejs') %> 
-    
-<body>
-  <main>
-    <div class="container_produto"> 
-      <h1><%= prod.nomeProduto %></h1>
-      <picture> 
-      <img class="imgProduto" src="/imgs/produtos/<%= prod.imgProduto %>" alt="img">   
-      <p>
-        <%= prod.descricao %>
-      </p>
-      <h2> R$<%= prod.preco %></h2>
-       <div class="botoes">
-        <input class="adicionar" type="button" value="Adicionar ao carrinho"/>
-         <br>
-         <input class="comprar" type="button" value="Comprar agora"></input>
-       </div>
-    </div>
+<%- include('partials/header') %>
 
-    
-     
-  </main>
-</body>
+  <body>
+    <main>
+      <div class="container_produto">
+        
+          
+        
+        <img class="imgProduto" src="/imgs/produtos/<%= prod.imgProduto %>" alt="img">
+        <div class="detalhes">
+          <p>
+            <%= prod.nomeProduto %>
+            <%= prod.descricao %>
+          </p>
+          <h2> R$<%= prod.preco %>
+          </h2>
+          <div class="botoes">
+            <input class="adicionar" type="button" value="Adicionar ao carrinho" a=""/>
+          
+            <input class="comprar" type="button" value="Comprar agora" a=""></input>
+          </div>
+        </div>
+      </div>
 
+
+
+    </main>
+    <footer>
+
+    </footer>
+  </body>
