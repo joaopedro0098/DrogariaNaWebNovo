@@ -1,0 +1,138 @@
+
+*{
+    padding:0;
+    margin:0; 
+    box-sizing:border-box;
+}
+
+:root{
+    --color1:#2909E3;
+    --color2:#164CFA;
+    --color3:#b6ddf5;
+    --color4:#e4f3f4;
+    --color5:#8B0AFB;
+    --color6:rgb(6, 226, 6);
+}
+
+.container_produto{
+    display:inline-block;
+}
+main{
+    background-image:linear-gradient(to top,rgb(168, 168, 224),white);
+    margin-bottom:20rem; 
+}
+
+
+.imgProduto{
+    margin: 0rem 0rem 0rem 7rem; 
+    width:20rem;
+    align-items:center; 
+    
+}
+h2{
+    font-size:4rem;
+    font-weight:0.1rem;
+    text-align:center; 
+    margin-top:2rem; 
+    font-family:'Poppins' , sans-serif;
+}
+p{  
+    
+    width:30rem;
+    text-align: center;
+    margin: 2rem 0rem 0rem 2rem;
+    padding-right:1.1rem;
+    padding-left:1.3rem;
+    font-size: 2rem;
+    font-family: 'Poppins' , sans-serif;
+    
+}
+.botoes{
+ flex:wrap; 
+}
+
+.adicionar{
+    font-size:2rem;
+    color:white; 
+    margin-top:4rem;
+    margin-left:4rem;
+    width:25rem;
+    height:6rem;
+    border-radius:0.8rem;
+    padding:2rem 1rem 2rem 1rem; 
+    background-color:var(--color2);
+}
+.comprar{
+    font-size:2rem;
+    color:white;
+    margin-top:4rem;
+    margin-left:4rem;
+    width: 25rem;
+    height:6rem;
+    border-radius:0.8rem;
+    padding:2rem 1rem 2rem 1rem; 
+    background-color:var(--color6);
+}
+
+ @media only screen and (min-width: 992px) {
+    .container_produto{
+        background-image:linear-gradient(to top,rgb(168, 168, 224),white); 
+        display:grid;
+        grid-template-areas:
+        "imgProduto nomeProduto"
+        "imgProduto descricao";
+    }
+   
+     .imgProduto{
+        margin-top:4rem;
+        width:28rem;
+        height:30rem;
+        grid-area:imgProduto;
+     }
+     h1{
+        grid-area:nomeProduto;
+     }
+
+    .detalhes{
+        grid-area:descricao;
+       
+    }
+    p{
+        
+        text-align:left;
+        width:45rem;
+        margin:3.5rem 0rem 2rem 0rem;
+        font-size:3rem;
+        margin-right:15rem;
+        
+    }
+    h2{
+        font-size:4rem;
+        margin-bottom:3.5rem;
+        margin-right:45rem; 
+        padding-right:2rem;
+        font-family:'Poppins' , sans-serif;
+
+    }
+    .botoes{
+        display:flex;
+        margin-bottom:10rem;
+        flex-direction:row; 
+    }
+    .adicionar{
+      margin-top:8rem;
+      margin-left:1rem; 
+    }
+    .comprar{
+        margin-top:8rem;
+        
+        
+    }
+  
+
+    }
+   
+ 
+     
+   
+

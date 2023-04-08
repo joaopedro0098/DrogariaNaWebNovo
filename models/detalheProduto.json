@@ -1,0 +1,25 @@
+[
+    {
+      "idProduto": "1",
+      "nomeProduto":"Dipirona",
+      "imgProduto":"dipirona.jpg",
+      "preco":"10,00", 
+      "descricao":"Monoidrata 500mg Pratti Donaduzzi 20 "
+     
+    },
+    {
+      "idProduto": "2",
+      "nomeProduto":"Gardenal",
+      "imgProduto":"dipirona.jpg",
+      "preco":"20,00", 
+      "descricao":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur nam corrupti deleniti reiciendis earum, fugit "
+    },
+    {
+      "idProduto": "3",
+      "nomeProduto":"dorflex",
+      "imgProduto":"dipirona.jpg",
+      "preco":"20,00", 
+      "descricao":"descrição de dorflex"
+    }
+]
+

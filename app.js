@@ -1,5 +1,6 @@
 const express = require('express');
 const indexRouter = require('./routes/indexRouter');
+const detalheProduto = require('./routes/detalheProduto'); 
 const contatoRoute = require('./routes/contatoRoute');
 const productsRouter = require('./routes/productsRouter');
 const userRouter = require('./routes/userRouter')
@@ -13,12 +14,15 @@ app.set('view engine', 'ejs');
 app.set('views', 'views');
 
 app.use('/', indexRouter);
-app.use('/products', productsRouter)
-app.use('/user', userRouter)
+app.use('/produto', detalheProduto);  
+app.use('/', indexRouter);
+app.use('/products', productsRouter);
+app.use('/user', userRouter);
 
-// Essas rotas serão descontinuadas 
+
 
 app.use('/contato', contatoRoute);
+
 
 app.listen(80, () => console.log("Servidor funcionando na porta 80"));
 
