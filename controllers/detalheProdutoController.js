@@ -1,4 +1,4 @@
-const detalheProduto = require('../models/detalheProduto.json')
+const detalheProduto = []
 
 const controller = {
     detalheProduto: (req, res) => {

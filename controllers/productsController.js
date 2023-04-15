@@ -1,4 +1,4 @@
-const products = require('../databases/products.json')
+const products = []
 
 const controller = {
     listAll: (req, res) => res.render('listProducts', {products}),

@@ -26,3 +26,15 @@ app.use('/contato', contatoRoute);
 
 app.listen(80, () => console.log("Servidor funcionando na porta 80"));
 
+/*
+const express = require('express');
+
+const userRouter = require('./routes/userRouter');
+require('./databases');
+const app = express()
+
+aplication.use(express.json());
+app.use('/',userRouter);
+
+app.listen(8080);
+*/
