@@ -4,24 +4,27 @@
 module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.createTable(
-      'Users', 
-      { 
+      'Produto',
+      {
         id: {
-          // id INT NOT NULL PRIMARY KEY AUTO_INCREMENT
-        type: Sequelize.INTEGER,
-        allowNull:false, 
-        primaryKey:true,
-        autoIncrement:true
-      },
-        name: {
-          type: Sequelize.STRING,
+          type: Sequelize.INTEGER,
+          allowNull:false, 
+          primaryKey:true,
+          autoIncrement:true
+         },
+        name:{
+          type:Sequelize.STRING,
+          allowNull:false, 
+         },
+         descricao: {
+          type: Sequelize.TEXT,
           allowNull: false
         },
-        email:{
-          type: Sequelize.STRING,
+         preco: {
+          type: Sequelize.FLOAT,
           allowNull: false
-        } ,
-        createdAt: {
+        },
+         createdAt: {
           type: Sequelize.DATE,
           allowNull: false
         },
@@ -29,13 +32,11 @@ module.exports = {
           type: Sequelize.DATE,
           allowNull: false
         }, 
-      
-      
-      });
-    
+      }
+    )
   },
 
   async down (queryInterface, Sequelize) {
-   await queryInterface.dropTable('Users'); 
-  }   
+    await queryInterface.dropTable('Produto'); 
+  }
 };

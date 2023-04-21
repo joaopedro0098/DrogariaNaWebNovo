@@ -1,4 +1,4 @@
-const Users = require('../models/Users');
+const Cliente = require('../models/Cliente');
 
 function showLogin (req, res){ 
     res.render('loginPage')
@@ -7,20 +7,23 @@ function index (req, res){
     res.send('O aplicativo está funcionando')
 };
 
-async function createUser (req, res) {
+async function createCliente (req, res) {
     const {name,email} = req.body;
-    const createdUser = await Users.create({nome, email});
+    const createdCliente = await Cliente.create({nome, email,cpf, senha});
 
-    return res.json(createdUser);
+    return res.json(createdCliente);
 };
 
-async function listUsers (req, res) {};
+async function listClientes (req, res) {
+    const clientes = await Cliente.findAll();
+    return res.json(clientes);
+};
 
-async function listUser (req, res)  {};
+async function listClientes (req, res)  {};
 
-async function updateUser (req, res) {}; 
+async function updateCliente (req, res) {}; 
 
-async  function deleteUser (req, res) {};
+async  function deleteCliente (req, res) {};
 
 
 
@@ -28,10 +31,10 @@ async  function deleteUser (req, res) {};
 module.exports = {
     index,
     showLogin,
-    createUser,
-    listUsers,
-    listUser,
-    updateUser, 
-    deleteUser
+    createCliente,
+    listClientes,
+    listClientes,
+    updateCliente, 
+    deleteCliente
 };
 
