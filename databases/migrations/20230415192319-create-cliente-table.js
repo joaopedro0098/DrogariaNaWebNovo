@@ -32,14 +32,6 @@ module.exports = {
           type: Sequelize.STRING,
           allowNull:true, 
         },
-        enderecoId:{ // pode ser enderecoId mesmo? 
-            type: Sequelize.INTEGER,
-            allowNull: false,
-            references: {  // fiz a importação da foreigner Key de modo correto? 
-            model: 'Endereco',
-            key: 'id'
-          }
-        },
         createdAt: {
           type: Sequelize.DATE,
           allowNull: false

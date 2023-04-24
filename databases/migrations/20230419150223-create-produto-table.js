@@ -20,6 +20,15 @@ module.exports = {
           type: Sequelize.TEXT,
           allowNull: false
         },
+        categoriaId: {
+          allowNull: false,
+          type: Sequelize.INTEGER,
+          
+          references: {
+            model: 'Categoria',
+            key: 'id'
+          },
+        },
          preco: {
           type: Sequelize.FLOAT,
           allowNull: false
