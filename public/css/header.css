@@ -1,74 +1,114 @@
-/* Dependências */
 
 :root{
     --bg_primary__main: #004AAD;
 }
 
 
-/* Aqui vão imports e configurações de variáveis roots */
+    
 
-/* Cores */
 header {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100vw;
+    
+    
     background-color: var(--bg_primary__main);
-}
 
-/* Layout - Responsividade */
-
-.menu-filters {
-    display: none;
+    
+    z-index: 1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 35px 35px;
+    
 }
 
 .header {
+    
     display: flex;
-}
-
-/* Espaçamentos - padding margin */
-
-header input {
-    padding: 6px 6px 6px 20px;
-    margin-top: 10px;
-}
-
-header {
-    padding: 14px 22px 14px 22px;
-}
-
-header .logo {
-    margin-top: -5px;
-}
-/* Tipografia */
-
-
-
-/* Estilos */
-
-header{
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-}
-
-.header{
     justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+}  
+
+
+
+header .menu-icon {
+
+    width: 100%;
+    position: relative;
+    right: 35px;
+    
+    color: #fff;
+
+    width: 35px;
+    height: 35px;
+
+    text-decoration: none;
+    
+    
 }
 
-header img {
-    height: 30px;
+header .menu {
+
+    display: none;
+}
+
+.navbar-filters {
+    
+    display: none;
 }
 
 header .logo {
-    height: 4em;
+
+    width: 100%;
+    margin-top: 5px;
+    width: 162px;
+    height: 57px;
 }
 
-.search {
-    display: flex;
-    justify-content: center;
+header .cart-icon {
+    width: 100%;
+    position: relative;
+    left: 35px;
+    
+    color: #fff;
+    
+    text-decoration: none;
 }
 
-header input {
-    border-radius: 16px;
+.search-bar .search {
+
+    width: 100%;
+    position: relative;
+    
+    
+    width: 290px;
+    height: 30px;
+    left: 10px;
+    padding: 5px 5px 5px 15px;
+    margin-bottom: 12px;
+    border-radius: 50px;
     font-size: 15px;
-    width: 3000px;
-    height: 35px;
+    
 }
 
-/* Responsividade - Version Desktop */
+.search-bar .search-icon {
+
+    width: 100%;
+    position: relative;
+    right: 20px;
+    top: 2px;
+    color: #000;
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+@media (min-width:690px) {
+    
+    .header{
+        display: flex;
+    }
+}
