@@ -1,44 +1,46 @@
 <!DOCTYPE html>
-
-<html lang="en">
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drogaria Na Web</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-thin-straight/css/uicons-thin-straight.css'>
     <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/detalheProduto.css">
-</head>
-
-
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/medicamentos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="">
+    <script src="../js/index.js"></script>
+
+    <title>Drogaria Na Web</title>
 </head>
 
 <body>
 <header>
     <div class="header">
-        <nav class="menu">
-            <ul class="menu-filters">
+        <nav class="navbar">
+            <span class="menu">Menu</span>
+            <ul class="navbar-filters">
                 <li>Saudável</li>
                 <li>Cuidados Pessoais</li>
                 <li>Diabetes</li>
             </ul>
-            <img src="/imgs/burgao.png" alt="">
+            <a href="#" class="menu-icon"><i class="fi fi-rr-menu-burger"></i></a>
         </nav>
-
-        <img class="logo" src="/imgs/logo.png" alt="Drogaria Na Web">
-
-        <img class="carrinho" src="/imgs/carrinho.png" alt="Carrinho De Compras">
+        <div class="logo">
+            <img class="logo-dw" src="/imgs/logo.png" alt="Drogaria Na Web">
+        </div>
+        <div class="cart">
+            <a href="#" class="cart-icon"><i class="fi fi-ts-shopping-basket"></i></a>
+        </div>
+        
     </div>
 
-    <div class="search">
-        <input type="text" class="busca" placeholder="O que você deseja encontrar?">
+    <div class="search-bar">
+        <input type="text" class="search" placeholder="O que você deseja encontrar ?">
+        <a href="#" class="search-icon"><i class="fi fi-rr-search"></i></a>
     </div>
 </header>
 

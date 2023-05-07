@@ -1,88 +1,142 @@
-<%- include('partials/header') %> 
-
+<%- include('partials/header.ejs') %> 
 
     <main>
-        <section class="categorias">
-            <h1>Categorias</h1>
-                <div>
+        <section class="category">
+            <div class="background-carousel">
+                <div class="carousel-list-category">
                     <% categorias.forEach(categoria => { %>
-                        <article>
-                        <img class="imgMain" src="/imgs/categorias/<%= categoria.imagem %>" alt="">
-                        <h2><%= categoria.nomeCategoria %></h2>
-                        </article>
+                        <div class="list-category">
+                            <img class="" src="/imgs/categorias/<%= categoria.imagem %>" alt="">
+                            <h3><%= categoria.nomeCategoria %></h3>
+                        </div>
                     <% }) %>
                 </div>
+            </div>    
         </section>
 
-        <section class="promocoes">
-            
-            <h1>Promoções</h1>
-                <div>
+        <section class="sale">
+            <div class="carousel-list-sale">
                 <% promocao.forEach( promocao  => { %>
-                    <article>
-                    <h1><%= promocao.categoria %></h1>
-                    <img class="imgMain" src="/imgs/promocao/<%= promocao.imagem %>" alt="">
-                    <img class="imgMain" src="/imgs/promocao/<%= promocao.cupom %>" alt="">
-                    </article>
+                    <div class="imgMain_sale">
+                         <img class="" src="/imgs/promocao/<%= promocao.imagem %>" alt="">
+                    </div>
                 <% }) %>
-                </div>
-        </section>
-
-        <section class="maisVendidos">
-            
-                <h1>Mais Vendidos</h1>
-                <div>
-                <% maisvendidos.forEach( maisvendidos  => { %>
-                    <article>
-                        <img class="imgMain" src="/imgs/maisvendidos/<%= maisvendidos.imagem %>" alt="">
-                        <h1><%= maisvendidos.nomeRemedio %></h1>
-                        <h2><%= maisvendidos.preco %> </h2>
-                    </article>
-                <% }) %>
-                </div>
-        </section>
-
-        <section class="destaques">
-            <h1>Destaques</h1>
-            <div class="divDestaques">
-                <div>
-                    <img class="" src="/imgs/desodorante.png">
-                    <h3>Desodorante</h3>
-                </div>
-                <div>
-                    <img class="" src="/imgs/vitaminas.png">
-                    <h3>Vitaminas</h3>
-
-                    <img class="" src="/imgs/ninho.png">
-                    <h3>Ninho</h3>
-                </div>
-
-                <img class="" src="/imgs/forteviron.png">
             </div>
         </section>
 
-        <section class="nossasMarcas">
-            <h2>Nossas Marcas</h2>
-            <figure>
-                <img src="/imgs/medley.png" alt="Medley">
-                <img src="/imgs/nestle.png" alt="Nestle">
-                <img src="/imgs/libbs.png" alt="Libbs">
-                <img src="/imgs/ache.png" alt="Ache">
-                <img src="/imgs/pampers.png" alt="Ache">
-                <img src="/imgs/laroche.png" alt="La Roche">
-            </figure>
+        <section class="best-sellers">
+            <h1>Mais Vendidos</h1>
+            <div class="carousel-best-sellers">
+                <% maisvendidos.forEach( maisvendidos  => { %>
+                    <div class="best-sellers-cont">
+                        <img  src="/imgs/maisvendidos/<%= maisvendidos.imagem %>" alt="">
+                        <div class="price-best-sellers">
+                            <p><%= maisvendidos.nomeRemedio %></p>
+                            <div class="price">
+                                <span><%= maisvendidos.preco %></span>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                <% }) %>
+            </div>
         </section>
 
-        <section>
-            <figure>
-            <img src="/imgs/revolucaodascores.png" alt="">
-            <img src="/imgs/promocao50off.png" alt="">
-            </figure>
+        <div class="column-5">
+            <div class="all_banners_column_5">
+                <div class="bnr-1">
+                    <div>
+                        <img class="" src="">
+                        
+                    </div>
+                </div>
+                <div class="bnr-display">
+                    <div class="bnr-2">
+                        <div >
+                            <img class="" src="">
+                            
+                        </div>
+                    </div>
+                    <div class="bnr-3">
+                        <div> 
+                            <img class="" src="">
+                                
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="bnr-4">
+                    <div> 
+                        <img class="" src="">
+                            
+                    </div>
+                </div>
+            </div>
+
+            <section class="slider">
+            
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+    
+                    <div class="slide first">
+                        <img class="" src="/imgs/slides/banner-allegra.png">
+                    </div>
+                    <div class="slide">
+                        <img class="" src="/imgs/slides/banner-oral-b.png">
+                    </div>
+                    <div class="slide">
+                        <img class="" src="/imgs/slides/banner-johnsons.png">
+                    </div>
+                    <div class="slide">
+                        <img class="" src="/imgs/slides/banner-hidrabene.png">
+                    </div>
+    
+                    <div class="navigation-slides">
+                        <div class="slides-btn1"></div>
+                        <div class="slides-btn2"></div>
+                        <div class="slides-btn3"></div>
+                        <div class="slides-btn4"></div>
+                    </div>
+                </div>
+                
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+                
+            </section>
+            
+        </div>
+        <section class="nossas-marcas">
+            <ul class="marcas">
+                <% nossasMarcas.forEach( nossasMarcas  => { %>
+                <li>
+                    <img class="imgMain" src="/imgs/<%= nossasMarcas.imagem %>" alt="">
+                </li>
+                <% }) %>
+            </ul>
+        </section>
+
+        <section class="column-7">
+            <div class="banners-column-7">   
+                <ul class="bnr-column-7">
+                    <% bannerextras.forEach( bannerextras  => { %>
+                        <li>
+                            <img class="imgMain" src="/imgs/bannerextras/<%= bannerextras.imagem %>" alt="">
+                        </li>
+                    <% }) %>
+                </ul>
+            </div>
         </section>
     </main>
 
     <%- include('partials/footer.ejs') %> 
 
-    
 </body>
 </html>
